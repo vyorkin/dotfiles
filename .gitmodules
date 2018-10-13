@@ -1,0 +1,3 @@
+[submodule "tag-zsh"]
+	path = tag-zsh
+	url = git@bitbucket.org:vyorkin/zshrc.git
