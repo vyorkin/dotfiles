@@ -7,6 +7,9 @@
 [submodule "tag-emacs/emacs.d"]
 	path = tag-emacs/emacs.d
 	url = git@bitbucket.org:vyorkin/emacs.d.git
+[submodule "tag-tmux"]
+	path = tag-tmux
+	url = git@bitbucket.org:vyorkin/tmux.conf.git
 [submodule "tag-ruby/rbenv/plugins/ruby-build"]
 	path = tag-ruby/rbenv/plugins/ruby-build
 	url = https://github.com/rbenv/ruby-build.git
@@ -43,6 +46,3 @@
 [submodule "tag-ruby/rbenv/plugins/rbenv-readline"]
 	path = tag-ruby/rbenv/plugins/rbenv-readline
 	url = https://github.com/tpope/rbenv-readline.git
-[submodule "tag-tmux"]
-	path = tag-tmux
-	url = git@bitbucket.org:vyorkin/tmux.conf.git
