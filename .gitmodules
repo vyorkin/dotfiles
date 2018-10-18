@@ -4,3 +4,42 @@
 [submodule "dotsecrets"]
 	path = dotsecrets
 	url = git@bitbucket.org:vyorkin/dotsecrets.git
+[submodule "tag-emacs/emacs.d"]
+	path = tag-emacs/emacs.d
+	url = git@bitbucket.org:vyorkin/emacs.d.git
+[submodule "tag-ruby/rbenv/plugins/ruby-build"]
+	path = tag-ruby/rbenv/plugins/ruby-build
+	url = https://github.com/rbenv/ruby-build.git
+[submodule "tag-ruby/rbenv/plugins/rbenv-aliases"]
+	path = tag-ruby/rbenv/plugins/rbenv-aliases
+	url = https://github.com/tpope/rbenv-aliases.git
+[submodule "tag-ruby/rbenv/plugins/rbenv-binstubs"]
+	path = tag-ruby/rbenv/plugins/rbenv-binstubs
+	url = https://github.com/ianheggie/rbenv-binstubs.git
+[submodule "tag-ruby/rbenv/plugins/rbenv-ctags"]
+	path = tag-ruby/rbenv/plugins/rbenv-ctags
+	url = https://github.com/tpope/rbenv-ctags.git
+[submodule "tag-ruby/rbenv/plugins/rbenv-default-gems"]
+	path = tag-ruby/rbenv/plugins/rbenv-default-gems
+	url = https://github.com/rbenv/rbenv-default-gems.git
+[submodule "tag-ruby/rbenv/plugins/rbenv-whatis"]
+	path = tag-ruby/rbenv/plugins/rbenv-whatis
+	url = https://github.com/rkh/rbenv-whatis.git
+[submodule "tag-ruby/rbenv/plugins/rbenv-use"]
+	path = tag-ruby/rbenv/plugins/rbenv-use
+	url = https://github.com/rkh/rbenv-use.git
+[submodule "tag-ruby/rbenv/plugins/rbenv-communal-gems"]
+	path = tag-ruby/rbenv/plugins/rbenv-communal-gems
+	url = https://github.com/tpope/rbenv-communal-gems.git
+[submodule "tag-ruby/rbenv/plugins/rbenv-vars"]
+	path = tag-ruby/rbenv/plugins/rbenv-vars
+	url = https://github.com/rbenv/rbenv-vars.git
+[submodule "tag-ruby/rbenv/plugins/rbenv-update"]
+	path = tag-ruby/rbenv/plugins/rbenv-update
+	url = https://github.com/rkh/rbenv-update.git
+[submodule "tag-ruby/rbenv/plugins/rbenv-plug"]
+	path = tag-ruby/rbenv/plugins/rbenv-plug
+	url = https://github.com/znz/rbenv-plug.git
+[submodule "tag-ruby/rbenv/plugins/rbenv-readline"]
+	path = tag-ruby/rbenv/plugins/rbenv-readline
+	url = https://github.com/tpope/rbenv-readline.git

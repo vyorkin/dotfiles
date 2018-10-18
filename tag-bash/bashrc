@@ -1,0 +1,12 @@
+HISTCONTROL=ignoreboth # ~ ignorespace:ignoredups
+HISTFILE=~/.bash_histfile
+HISTSIZE=100000
+SAVEHIST=100000
+
+# see https://github.com/wofr06/lesspipe
+export LESSOPEN="|/usr/local/bin/lesspipe.sh %s" LESS_ADVANCED_PREPROCESSOR=1
+
+. $HOME/.dotsecrets/secret_tokens
+
+# added by travis gem
+[ -f $HOME/.travis/travis.sh ] && . $HOME/.travis/travis.sh
