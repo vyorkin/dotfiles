@@ -1,3 +1,6 @@
 [submodule "tag-zsh"]
 	path = tag-zsh
 	url = git@bitbucket.org:vyorkin/zshrc.git
+[submodule "dotsecrets"]
+	path = dotsecrets
+	url = git@bitbucket.org:vyorkin/dotsecrets.git
