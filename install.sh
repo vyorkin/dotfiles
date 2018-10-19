@@ -1,9 +1,5 @@
 #!/bin/sh
 
-if [[ `uname` == "Linux" ]]; then
-        echo "running on Linux"
-fi
-
 if [[ `uname -r` == *"ARCH" ]]; then
         sudo pacman -Syu
         echo '
@@ -19,7 +15,6 @@ if [[ `uname` == "Darwin" ]]; then
         /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
         brew tap Homebrew/bundle
         brew bundle
-        brew install --HEAD https://raw.github.com/apiaryio/drafter/master/tools/homebrew/drafter.rb
         mas signin
 
         # install rust
