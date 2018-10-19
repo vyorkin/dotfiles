@@ -1,0 +1,12 @@
+bundler
+overcommit
+tmuxinator
+pry
+pry-byebug
+awesome_print
+hirb
+hirb-unicode
+hookup
+gem-ctags
+rufo
+rubocop

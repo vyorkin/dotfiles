@@ -39,11 +39,11 @@ if [[ `uname` == "Darwin" ]]; then
 fi
 
 # manual linking
-ln -s $HOME/.dotfiles/rcrc $HOME/.rcrc
+ln -s $HOME/.dotfiles/rcrc $HOME/.rcrc # ?
 ln -s $HOME/.dotfiles/dotsecrets/netrc ~/.netrc
 ln -s $HOME/.dotfiles/dotsecrets/ssh ~/.ssh
 
-# allow everything
+# allow apps from unidentified developers
 sudo spctl --master-disable
 
 # set zsh as a default shell for the current user
