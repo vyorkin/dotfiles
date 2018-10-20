@@ -18,9 +18,14 @@ if [[ `uname` == "Darwin" ]]; then
         mas signin
 
         # install rust
-        curl -sSf https://static.rust-lang.org/rustup.sh | sh
-        # install some useful rust packages
+        curl https://sh.rustup.rs -sSf | sh
+        source $HOME/.cargo/env
+        rustup component add rust-src
+        rustup toolchain add nightly
         cargo install bingrep
+        cargo install rusty-tags
+        rustup component add rustfmt-preview --toolchain nightly
+        cargo +nightly install racer
 
         sudo easy_install pip
 
@@ -37,6 +42,17 @@ fi
 ln -s $HOME/.dotfiles/rcrc $HOME/.rcrc # ?
 ln -s $HOME/.dotfiles/dotsecrets/netrc ~/.netrc
 ln -s $HOME/.dotfiles/dotsecrets/ssh ~/.ssh
+
+# link docker bash & zsh completions
+if [[ `uname` == "Darwin" ]]; then
+  ln -s /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion /usr/local/etc/bash_completion.d/docker
+  ln -s /Applications/Docker.app/Contents/Resources/etc/docker-machine.bash-completion /usr/local/etc/bash_completion.d/docker-machine
+  ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion /usr/local/etc/bash_completion.d/docker-compose
+
+  ln -s /Applications/Docker.app/Contents/Resources/etc/docker.zsh-completion /usr/local/share/zsh/site-functions/_docker
+  ln -s /Applications/Docker.app/Contents/Resources/etc/docker-machine.zsh-completion /usr/local/share/zsh/site-functions/_docker-machine
+  ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-completion /usr/local/share/zsh/site-functions/_docker-compose
+fi
 
 # allow apps from unidentified developers
 sudo spctl --master-disable
