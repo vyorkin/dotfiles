@@ -17,6 +17,11 @@ if [[ `uname` == "Darwin" ]]; then
         brew bundle
         mas signin
 
+        # setup agda
+        mkdir -p ~/.agda
+        echo /usr/local/lib/agda/standard-library.agda-lib >>~/.agda/libraries
+        echo standard-library >>~/.agda/defaults
+
         # install rust
         curl https://sh.rustup.rs -sSf | sh
         source $HOME/.cargo/env
@@ -39,7 +44,7 @@ if [[ `uname` == "Darwin" ]]; then
 fi
 
 # manual linking
-ln -s $HOME/.dotfiles/rcrc $HOME/.rcrc # ?
+ln -s $HOME/.dotfiles/rcrc $HOME/.rcrc
 ln -s $HOME/.dotfiles/dotsecrets/netrc ~/.netrc
 ln -s $HOME/.dotfiles/dotsecrets/ssh ~/.ssh
 

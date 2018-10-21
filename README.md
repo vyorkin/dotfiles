@@ -51,6 +51,10 @@ stack install hasktags
 stack install haskdogs
 ```
 
+```
+stack install happy alex cpphs
+```
+
 Dhall:
 
 ```

@@ -128,6 +128,7 @@ brew 'rethinkdb'
 brew 'llvm', args: ['with-clang', 'with-libcxx']
 brew 'purescript'
 brew 'haskell-stack'
+brew 'agda'
 brew 'ocaml'
 brew 'opam'
 brew 'coq'
