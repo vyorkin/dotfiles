@@ -46,3 +46,6 @@
 [submodule "tag-ruby/rbenv/plugins/rbenv-readline"]
 	path = tag-ruby/rbenv/plugins/rbenv-readline
 	url = https://github.com/tpope/rbenv-readline.git
+[submodule "tag-linux/arch"]
+	path = tag-linux/arch
+	url = git@gist.github.com:e85c0042ab26347fa7046831f6de4e8e.git
