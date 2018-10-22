@@ -17,6 +17,7 @@ brew 'mas'
 
 cask 'java'
 cask 'java6'
+cask 'java8'
 
 # brew 'rust'
 # rust is installed in Makefile
@@ -37,11 +38,6 @@ brew 'coursier/formulas/coursier', args: ['HEAD']
 brew 'swi-prolog'
 brew 'mercury'
 brew 'fop'
-
-brew 'parity', args: ['--devel']
-brew 'ethabi'
-brew 'ethkey'
-brew 'ethstore'
 
 brew 'sdl2'
 brew 'sdl2_image'
@@ -89,7 +85,6 @@ brew 'capstone'
 brew 'libmagic'
 brew 'yara'
 brew 'exercism'
-brew 'homebrew/emacs/markdown-mode'
 
 brew 'zsh'
 brew 'zplug'
@@ -99,9 +94,7 @@ brew 'the_silver_searcher'
 brew 'fzf'
 
 brew 'mu'
-brew 'cl-lib'
-# brew 'emacs-mac'
-brew 'emacs-plus', args: ['with-24bit-color', 'with-natural-title-bar', 'with-no-title-bars']
+brew 'emacs-plus', args: ['HEAD', 'with-no-title-bar']
 brew 'neovim'
 brew 'vim', args: ['override-system-vi', 'with-lua', 'with-perl', 'with-python3', 'with-ruby']
 
@@ -123,7 +116,6 @@ brew 'redis'
 brew 'mysql'
 brew 'sqlite'
 brew 'mongodb'
-brew 'rethinkdb'
 
 brew 'llvm', args: ['with-clang', 'with-libcxx']
 brew 'purescript'
@@ -133,7 +125,6 @@ brew 'ocaml'
 brew 'opam'
 brew 'coq'
 brew 'algol68g'
-brew 'smlnj'
 brew 'solidity'
 
 brew 'autoconf'
@@ -165,7 +156,7 @@ brew 'nginx'
 brew 'imagemagick'
 brew 'ffmpeg', args: ['with-libvpx', 'with-libvorbis']
 
-brew 'weechat', args: ['with-python', 'with-perl']
+brew 'weechat', args: ['with-perl']
 brew 'irssi'
 
 cask 'iterm2'
@@ -188,14 +179,12 @@ cask 'showyedge'
 cask 'flux'
 cask 'macdown'
 cask 'qblocker'
-cask 'toggldesktop'
 cask 'gyazo'
 cask 'ngrok'
 
-# cask 'emacs'  # fuck emacs, emacs-plus ftw
-# cask 'macvim' # fuck macvim, vimrc ftw
+# cask 'emacs'  # emacs-plus ftw
+# cask 'macvim' # vimrc ftw
 
-cask 'vimrc'
 cask 'visual-studio-code'
 cask 'lighttable'
 cask 'intellij-idea-ce'
@@ -219,7 +208,7 @@ cask 'nylas-mail'
 cask 'pgadmin4'
 cask 'google-cloud-sdk'
 
-cask 'torbrowser'
+cask 'tor-browser'
 cask 'google-chrome'
 cask 'google-chrome-canary'
 cask 'firefox'
@@ -240,7 +229,6 @@ cask 'qlmarkdown'
 cask 'quicklook-json'
 cask 'qlprettypatch'
 cask 'quicklook-csv'
-cask 'betterzipql'
 cask 'qlimagesize'
 cask 'webpquicklook'
 cask 'suspicious-package'

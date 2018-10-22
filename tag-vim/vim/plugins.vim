@@ -294,6 +294,7 @@ Plug 'duff/vim-bufonly'
 
 Plug 'majutsushi/tagbar'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'pbrisbin/vim-mkdir'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'matze/vim-move'
 

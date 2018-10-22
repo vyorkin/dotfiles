@@ -87,10 +87,6 @@ bind .:${hyper} focus 'zoom.us'
 bind j:${hyper} focus 'VimR'
 bind a:${hyper} focus 'VLC'
 
-# extra app bindings
-
-bind l:${hyper} focus 'SnippetsLab'
-
 # navigation & location bindings
 
 bind h:cmd;shift ${showNormalHint}
