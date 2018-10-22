@@ -2,6 +2,6 @@ EXCLUDES="rcrc helpers install.sh Makefile Brewfile requirements.txt requirement
 
 TAGS="utils bash zsh tmux git vim irc ruby python clojure haskell rust idea postgresql"
 
-SYMLINK_DIRS="dotsecrets:* weechat:* tmux vim nvim emacs.d rbenv/plugins yasnippet-snippets"
+SYMLINK_DIRS="dotsecrets:* weechat irssi tmux vim nvim emacs.d rbenv/plugins yasnippet-snippets"
 
 COPY_ALWAYS="npmrc gitconfig"
