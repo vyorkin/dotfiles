@@ -24,7 +24,7 @@ if [[ `uname` == "Darwin" ]]; then
 
         # install rust
         curl https://sh.rustup.rs -sSf | sh
-        source $HOME/.cargo/env
+        source ~/.cargo/env
         rustup component add rust-src
         rustup toolchain add nightly
         cargo install bingrep
@@ -35,7 +35,7 @@ if [[ `uname` == "Darwin" ]]; then
         sudo easy_install pip
 
         mkdir -p ~/.karabiner.d/configuration/
-        touch $HOME/.karabiner.d/configuration/karabiner.json
+        touch ~/.karabiner.d/configuration/karabiner.json
 
         sudo sysctl -w kern.maxfiles=1000000
         sudo sysctl -w kern.maxfilesperproc=18000
@@ -44,7 +44,7 @@ if [[ `uname` == "Darwin" ]]; then
 fi
 
 # manual linking
-ln -s $HOME/.dotfiles/rcrc $HOME/.rcrc
+ln -s $HOME/.dotfiles/rcrc ~/.rcrc
 ln -s $HOME/.dotfiles/dotsecrets/netrc ~/.netrc
 ln -s $HOME/.dotfiles/dotsecrets/ssh ~/.ssh
 
@@ -66,9 +66,17 @@ sudo spctl --master-disable
 sudo chsh -s $(which zsh) $USER
 
 # backup existing emacs configuration
-mv -f $HOME/.emacs.d $HOME/.emacs.d.bak
+mv -f ~/.emacs.d ~/.emacs.d.bak
 
 pip install -r requirements.txt
 pip3 install -r requirements3.txt
 
 /usr/local/opt/fzf/install
+
+rcup -v -d ~/.dotfiles
+
+if [[ `uname` == "Darwin" ]]; then
+  rcup -v -t macos -d ~/.dotfiles
+elif [[ `uname` == "Linux" ]]; then
+  rcup -v -t linux -d ~/.dotfiles
+fi
