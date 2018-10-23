@@ -40,7 +40,7 @@ My emacs config for [alchemist](https://github.com/tonini/alchemist.el) relies o
 Global packages:
 
 ```
-stack install ghc-mod hindent stylish-haskell hlint hoogle
+stack install hindent stylish-haskell hlint hoogle
 ```
 
 ```
@@ -61,12 +61,9 @@ Dhall:
 stack install dhall-json dhall
 ```
 
-Other stuff:
+ghc-mod:
 
-```
-stack install pointfree pointfull codex
-```
-
+Personally, I don't use it.
 Note that `ghc-mod` doesn't support newer versions of GHC.
 So you could use the `ghc-mod-5.9.0.0` + `lts-10.8` or even downgrade to `lts-9.21` and use `ghc-mod-5.8.0.0`.
 The first gist is [here](https://gist.github.com/vyorkin/f495fd515255b0ac26bc1c31d1a84236),
@@ -79,6 +76,16 @@ More info:
 * https://stackoverflow.com/questions/50948485/stack-install-ghc-mod-fails-with-dependencies-conflicts-on-osx-10-13-4
 * https://github.com/DanielG/ghc-mod/issues/900#issuecomment-372979078
 * https://github.com/DanielG/ghc-mod/issues/940
+
+```
+stack install ghc-mod
+```
+
+Other stuff (which may maybe tricky to install):
+
+```
+stack install pointfree pointfull codex
+```
 
 #### Scala
 

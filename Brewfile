@@ -94,7 +94,7 @@ brew 'the_silver_searcher'
 brew 'fzf'
 
 brew 'mu'
-brew 'emacs-plus', args: ['HEAD', 'with-no-title-bar']
+brew 'emacs-plus', args: ['HEAD', 'with-no-titlebar', 'without-spacemacs-icon', 'with-modern-icon']
 brew 'neovim'
 brew 'vim', args: ['override-system-vi', 'with-lua', 'with-perl', 'with-python3', 'with-ruby']
 
