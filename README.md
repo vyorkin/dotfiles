@@ -113,6 +113,15 @@ You may want to install [the Reason toolchain](https://github.com/reasonml/reaso
 
 [Mac OS X issues and workaround](https://github.com/Sarcasm/irony-mode/wiki/Mac-OS-X-issues-and-workaround)
 
+#### Gist
+
+Setup the [gist mode](https://github.com/defunkt/gist.el):
+
+```bash
+git config --global github.user <your-github-user-name>
+git config --global github.oauth-token <your-personal-access-token-with-gist-scope>
+```
+
 #### GCC & bitutils
 
 On Mac OS X I use GNU GCC and GNU bitutils for cross compilation,
