@@ -1,5 +1,4 @@
 :set prompt  "\SOH\ESC]0;GHCi: %s\BEL\ESC[32;1m\STXλ>\SOH\ESC[0m\STX "
-:set prompt2                    "\SOH\ESC[32;1m\STX |\SOH\ESC[0m\STX "
 
 -- Paste and evaluate text from the OS X clipboard. (The pasted text also
 -- prints in yellow unless pasting quietly using :paste-quiet.)
