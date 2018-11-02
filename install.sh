@@ -46,6 +46,9 @@ ln -s $HOME/.dotfiles/dotsecrets/offlineimaprc ~/.offlineimaprc
 ln -s $HOME/.dotfiles/dotsecrets/goobookrc ~/.goobookrc
 ln -s $HOME/.dotfiles/dotsecrets/goobook_auth.json ~/.goobook_auth.json
 
+# fix key permissions
+chmod 600 ~/.ssh/id_*
+
 # link docker bash & zsh completions
 if [[ `uname` == "Darwin" ]]; then
   ln -s /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion /usr/local/etc/bash_completion.d/docker
