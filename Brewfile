@@ -10,6 +10,7 @@ tap 'coursier/formulas'
 tap 'd12frosted/emacs-plus'
 tap 'jmhobbs/parrot'
 tap 'paritytech/paritytech'
+tap 'raggi/ale'
 # tap 'railwaycat/emacsmacport'
 
 brew 'rcm'
@@ -70,6 +71,7 @@ brew 'm-cli'
 brew 'terminal-parrot'
 brew 'ccat'
 brew 'drafter'
+brew 'openssl'
 brew 'asciinema'
 brew 'coreutils'
 brew 'gnutls'
@@ -85,6 +87,12 @@ brew 'capstone'
 brew 'libmagic'
 brew 'yara'
 brew 'exercism'
+
+# required for mu4e
+brew 'openssl-osx-ca'
+brew 'offline-imap'
+brew 'autoconf-archive'
+brew 'mu', args: ['with-emacs']
 
 brew 'zsh'
 brew 'zplug'

@@ -36,17 +36,13 @@ if [[ `uname` == "Darwin" ]]; then
 
         mkdir -p ~/.karabiner.d/configuration/
         touch ~/.karabiner.d/configuration/karabiner.json
-
-        sudo sysctl -w kern.maxfiles=1000000
-        sudo sysctl -w kern.maxfilesperproc=18000
-
-        defaults write com.apple.finder AppleShowAllFiles YES   # display hidden files in Finder
 fi
 
 # manual linking
 ln -s $HOME/.dotfiles/rcrc ~/.rcrc
 ln -s $HOME/.dotfiles/dotsecrets/netrc ~/.netrc
 ln -s $HOME/.dotfiles/dotsecrets/ssh ~/.ssh
+ln -s $HOME/.dotfiles/dotsecrets/offlineimaprc ~/.offlineimaprc
 
 # link docker bash & zsh completions
 if [[ `uname` == "Darwin" ]]; then
@@ -57,6 +53,8 @@ if [[ `uname` == "Darwin" ]]; then
   ln -s /Applications/Docker.app/Contents/Resources/etc/docker.zsh-completion /usr/local/share/zsh/site-functions/_docker
   ln -s /Applications/Docker.app/Contents/Resources/etc/docker-machine.zsh-completion /usr/local/share/zsh/site-functions/_docker-machine
   ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-completion /usr/local/share/zsh/site-functions/_docker-compose
+
+  source ./setup-macos.sh
 fi
 
 # allow apps from unidentified developers

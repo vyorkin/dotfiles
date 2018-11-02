@@ -35,6 +35,14 @@ mix archive.install https://github.com/phoenixframework/archives/raw/master/phx_
 My emacs config for [alchemist](https://github.com/tonini/alchemist.el) relies on
 [elixir sources](https://github.com/elixir-lang/elixir.git) available at the following path: `~/projects/github/elixir`.
 
+##### OpenSSL
+
+Start the periodic task to sync OSX Keychain certs to Homebrew installed OpenSSL & LibreSSL:
+
+```
+brew services start openssl-osx-ca
+```
+
 ##### Haskell
 
 Global packages:
