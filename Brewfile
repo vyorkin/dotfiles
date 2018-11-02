@@ -73,6 +73,7 @@ brew 'ccat'
 brew 'drafter'
 brew 'openssl'
 brew 'asciinema'
+brew 'mutt'
 brew 'coreutils'
 brew 'gnutls'
 brew 'texinfo'
@@ -106,7 +107,9 @@ brew 'emacs-plus', args: ['HEAD', 'with-no-titlebar', 'without-spacemacs-icon', 
 brew 'neovim'
 brew 'vim', args: ['override-system-vi', 'with-lua', 'with-perl', 'with-python3', 'with-ruby']
 
-brew 'htop'
+# I use htop-vim fork instead
+# brew 'htop'
+
 brew 'httpie'
 brew 'jq'
 brew 'jid'

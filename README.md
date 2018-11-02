@@ -130,6 +130,12 @@ git config --global github.user <your-github-user-name>
 git config --global github.oauth-token <your-personal-access-token-with-gist-scope>
 ```
 
+#### HTOP
+
+I use [fork with VIM keybindings](https://github.com/KoffeinFlummi/htop-vim).
+You should compile and install it manually, see the [INSTALL file](https://github.com/KoffeinFlummi/htop-vim/blob/master/INSTALL) for
+detailed instructions.
+
 #### GCC & bitutils
 
 On Mac OS X I use GNU GCC and GNU bitutils for cross compilation,

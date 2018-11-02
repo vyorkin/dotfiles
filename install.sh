@@ -43,6 +43,9 @@ ln -s $HOME/.dotfiles/rcrc ~/.rcrc
 ln -s $HOME/.dotfiles/dotsecrets/netrc ~/.netrc
 ln -s $HOME/.dotfiles/dotsecrets/ssh ~/.ssh
 ln -s $HOME/.dotfiles/dotsecrets/offlineimaprc ~/.offlineimaprc
+ln -s $HOME/.dotfiles/dotsecrets/goobookrc ~/.goobookrc
+ln -s $HOME/.dotfiles/dotsecrets/goobook_auth.json ~/.goobook_auth.json
+ln -s $HOME/.dotfiles/dotsecrets/goobook_client_secret.json ~/.goobook_client_secret.json
 
 # link docker bash & zsh completions
 if [[ `uname` == "Darwin" ]]; then

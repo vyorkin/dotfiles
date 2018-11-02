@@ -1,4 +1,10 @@
 install:
 	./install.sh
 
-.PHONY: install
+up:
+	rcup -v -d ~/.dotfiles
+
+down:
+	rcdn -v -d ~/.dotfiles
+
+.PHONY: install up down
