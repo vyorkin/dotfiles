@@ -52,3 +52,6 @@
 [submodule "config/nvim/UltiSnips"]
 	path = config/nvim/UltiSnips
 	url = https://github.com/vyorkin-personal/ultisnips-snippets.git
+[submodule "tag-ruby/dotpryrc"]
+	path = tag-ruby/dotpryrc
+	url = git@github.com:vyorkin-personal/dotpryrc.git
