@@ -1,4 +1,9 @@
-:set prompt  "\SOH\ESC]0;GHCi: %s\BEL\ESC[32;1m\STXλ>\SOH\ESC[0m\STX "
+-- :set prompt  "\SOH\ESC]0;GHCi: %s\BEL\ESC[32;1m\STXλ>\SOH\ESC[0m\STX "
+:set prompt "∀x. x ⊢ "
+
+:set stop :list
+:set +t
+:set +c
 
 -- Paste and evaluate text from the OS X clipboard. (The pasted text also
 -- prints in yellow unless pasting quietly using :paste-quiet.)
@@ -17,3 +22,8 @@
 :def pointful  \str -> return $ ":! pointful " ++ show str
 
 :def x \_ -> return ":set -XOverloadedStrings -XOverloadedLists"
+
+-- Some default imports
+import Control.Monad
+import Control.Applicative
+import Control.Arrow
