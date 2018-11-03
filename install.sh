@@ -40,6 +40,7 @@ fi
 
 # manual linking
 ln -s $HOME/.dotfiles/rcrc ~/.rcrc
+ln -s $HOME/.dotfiles/dotsecrets/authinfo ~/.authinfo
 ln -s $HOME/.dotfiles/dotsecrets/netrc ~/.netrc
 ln -s $HOME/.dotfiles/dotsecrets/ssh ~/.ssh
 ln -s $HOME/.dotfiles/dotsecrets/offlineimaprc ~/.offlineimaprc

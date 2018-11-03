@@ -2,3 +2,5 @@ neovim
 awscli
 cryptop
 goobook
+html2text
+format-sql

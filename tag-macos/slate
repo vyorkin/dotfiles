@@ -90,7 +90,10 @@ bind a:${hyper} focus 'VLC'
 # navigation & location bindings
 
 bind h:cmd;shift ${showNormalHint}
-bind g:cmd grid padding:5 0:8,3 1:6,2
+
+# overlaps with my emacs keybindings
+# also I don't use this feature much
+# bind g:cmd grid padding:5 0:8,3 1:6,2
 
 bind u:cmd;ctrl ${lefthalf}
 bind i:cmd;ctrl ${righthalf}
