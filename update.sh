@@ -15,3 +15,8 @@ npm update -g
 # update Ruby & gems
 gem update —-system
 gem update
+
+# update haskell
+stack upgrade
+stack update
+cabal update

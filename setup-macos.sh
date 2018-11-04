@@ -10,8 +10,9 @@ defaults write com.apple.universalaccess reduceTransparency -bool true
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 # Disable automatic termination of inactive apps
 defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
-# Disable “natural” (Lion-style) scrolling
-defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+# Enable “natural” (Lion-style) scrolling (it's enabled by deafult,
+# I'll just leave it here in case I want to change it later)
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
 # Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 # Disable press-and-hold for keys in favor of key repeat
