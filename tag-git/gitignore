@@ -12,6 +12,7 @@ tmp/**/*
 Session.vim
 .powder
 .rspec-local
+cabal.project.local
 npm-debug*
 rethinkdb_data
 .tern-port
