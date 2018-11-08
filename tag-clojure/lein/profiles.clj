@@ -6,6 +6,9 @@
                   [lein-dotenv "RELEASE"]
                   [lein-exec "0.3.7"]
                   [lein-pprint "1.2.0"]
+                  [lein-kibit "0.1.6"]
+                  [lein-try "0.4.3"]
+                  [jonase/eastwood "0.2.7"]
                   [lein-ancient "0.6.0-SNAPSHOT"]
                   [lein-annotations "0.1.0"]
                   [lein-autoreload "0.1.0"]
@@ -16,4 +19,6 @@
                   [lein-ring "0.9.7"]
                   [lein-cloudbees "1.0.5"]
                   [org.clojure/tools.trace "0.7.9"]
-                  [venantius/ultra "0.4.0"]]}}
+                  [venantius/ultra "0.4.0"]]
+        :dependencies [[slamhound "1.5.5"]]
+        :aliases {"slamhound" ["run" "-m" "slam.hound"]}}}

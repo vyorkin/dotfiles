@@ -52,21 +52,27 @@ stack install hindent stylish-haskell hlint hoogle
 ```
 
 ```
-stack install hasktags
+stack install weeder --resolver=nightly
 ```
 
 ```
-stack install haskdogs
+stack install hasktags haskdogs fast-tags present
 ```
 
 ```
-stack install happy alex cpphs
+stack install happy alex cpphs hpack pandoc summoner
 ```
 
 Dhall:
 
 ```
 stack install dhall-json dhall
+```
+
+Build the hoogle search index:
+
+```
+stack hoogle -- generate --local
 ```
 
 ghc-mod:

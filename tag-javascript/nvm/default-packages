@@ -1,5 +1,12 @@
 bower
 yo
+javascript-typescript-langserver
+flow-language-server
+typescript-language-server
+vscode-css-languageserver-bin
+vscode-html-languageserver-bin
+vue-language-server
+bash-language-server
 madge
 speed-test
 tldr

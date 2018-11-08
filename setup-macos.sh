@@ -18,7 +18,7 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 # Disable press-and-hold for keys in favor of key repeat
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 # Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain KeyRepeat -int 4
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
 # Set language and text formats
 defaults write NSGlobalDomain AppleLanguages -array "en" "ru"
@@ -47,7 +47,7 @@ defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
-#
+# Increase amount of maximum open files per process
 sudo sysctl -w kern.maxfiles=1000000
 sudo sysctl -w kern.maxfilesperproc=18000
 # Display hidden files in Finder

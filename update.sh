@@ -20,3 +20,4 @@ gem update
 stack upgrade
 stack update
 cabal update
+stack hoogle -- generate --local

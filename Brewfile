@@ -61,7 +61,7 @@ brew 'hub'
 brew 'tmux'
 brew 'ctags'
 brew 'graphviz'
-brew 'ripgrep'
+
 brew 'contacts'
 brew 'tree'
 brew 'telnet'
@@ -84,10 +84,18 @@ brew 'ethereum'
 brew 'swagger-codegen'
 brew 'pev'
 brew 'upx'
+brew 'openssl'
 brew 'capstone'
 brew 'libmagic'
 brew 'yara'
 brew 'exercism'
+
+# https://github.com/BurntSushi/ripgrep
+brew 'ripgrep'
+# https://github.com/sharkdp/fd
+brew 'fd'
+# https://github.com/sharkdp/bat
+brew 'bat'
 
 # required for mu4e
 brew 'openssl-osx-ca'
@@ -103,6 +111,7 @@ brew 'the_silver_searcher'
 brew 'fzf'
 
 brew 'mu'
+# NOTE: http://lists.gnu.org/archive/html/bug-gnu-emacs/2018-10/msg00084.html
 brew 'emacs-plus', args: ['HEAD', 'with-no-titlebar', 'without-spacemacs-icon', 'with-modern-icon']
 brew 'neovim'
 brew 'vim', args: ['override-system-vi', 'with-lua', 'with-perl', 'with-python3', 'with-ruby']

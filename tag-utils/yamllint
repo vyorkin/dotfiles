@@ -1,0 +1,19 @@
+# This is my first, very own configuration file for yamllint!
+# It extends the default conf by adjusting some options.
+
+extends: default
+
+rules:
+  document-start: disable
+  indentation:
+    ignore: |
+      package.yaml
+      stack.yaml
+  line-length:
+    ignore: |
+      package.yaml
+      stack.yaml
+  colons:
+    ignore: |
+      package.yaml
+      stack.yaml
