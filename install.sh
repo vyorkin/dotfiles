@@ -34,6 +34,10 @@ if [[ `uname` == "Darwin" ]]; then
 
         sudo easy_install pip
 
+        # install & manually link cabal
+        cabal install cabal-install
+        ln -s $HOME/.cabal/bin/cabal ~/.local/bin/cabal
+
         mkdir -p ~/.karabiner.d/configuration/
         touch ~/.karabiner.d/configuration/karabiner.json
 fi
