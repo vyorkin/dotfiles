@@ -77,7 +77,7 @@ extra-prog-path: /Users/vyorkin/.cabal/bin
 -- solver: modular
 -- allow-older: False
 -- allow-newer: False
--- documentation: False
+documentation: True
 -- doc-index-file: $datadir/doc/$arch-$os-$compiler/index.html
 -- target-package-db:
 -- max-backjumps: 2000

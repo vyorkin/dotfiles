@@ -28,8 +28,8 @@ Plug 'godlygeek/tabular'
 
 " navigation & search
 Plug 'junegunn/vim-pseudocl'
-Plug 'junegunn/vim-oblique'           " Improved /-search
 Plug 'kshenoy/vim-signature'
+Plug 'junegunn/vim-slash'
 
 " git
 Plug 'tpope/vim-fugitive'
@@ -190,12 +190,15 @@ Plug 'mitsuhiko/vim-python-combined'
 
 " haskell
 
-" Plug 'eagletmt/ghcmod-vim'
-" Plug 'neovimhaskell/haskell-vim'
+Plug 'neovimhaskell/haskell-vim'
 " Plug 'hspec/hspec.vim'
 " Plug 'eagletmt/neco-ghc'
 " Plug 'nbouscal/vim-stylish-haskell'
 " Plug 'dag/vim2hs'
+
+" I use LSP instead
+" Plug 'eagletmt/ghcmod-vim'
+
 
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
@@ -270,7 +273,7 @@ Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'ajh17/VimCompletesMe'
 
 " it hangs while I type shit
-" Plug 'Shougo/deoplete.nvim'
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " Plug 'carlitux/deoplete-ternjs'
 " Plug 'mhartington/deoplete-typescript'
 " Plug 'steelsojka/deoplete-flow'
@@ -304,6 +307,8 @@ Plug 'junegunn/fzf.vim'
 " Plug 'kien/ctrlp.vim'
 " Plug 'FelikZ/ctrlp-py-matcher'
 
+
+" An ack/ag/pt/rg powered code search and view tool
 Plug 'dyng/ctrlsf.vim'
 Plug 'rking/ag.vim'
 Plug 'mbbill/undotree'

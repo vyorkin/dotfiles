@@ -11,6 +11,10 @@ export LESSOPEN="|/usr/local/bin/lesspipe.sh %s" LESS_ADVANCED_PREPROCESSOR=1
 . '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
 . '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
 
+# haskell stack completions
+eval "$(stack --bash-completion-script stack)"
+
+# haskell summoner completions
 source <(summon --bash-completion-script `which summon`)
 
 [[ -f ~/.travis/travis.sh ]] && . ~/.travis/travis.sh

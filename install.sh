@@ -81,6 +81,9 @@ pip3 install -r requirements3.txt
 
 /usr/local/opt/fzf/install
 
+# install Hackett programming language
+raco pkg install hackett
+
 rcup -v -d ~/.dotfiles
 
 if [[ `uname` == "Darwin" ]]; then
