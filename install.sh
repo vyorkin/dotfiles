@@ -37,6 +37,8 @@ if [[ `uname` == "Darwin" ]]; then
         # install & manually link cabal
         cabal install cabal-install
         ln -s $HOME/.cabal/bin/cabal ~/.local/bin/cabal
+        # update the Hackage index for the first time
+        cabal new-update
 
         mkdir -p ~/.karabiner.d/configuration/
         touch ~/.karabiner.d/configuration/karabiner.json
