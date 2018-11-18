@@ -44,6 +44,17 @@ if [[ `uname` == "Darwin" ]]; then
         touch ~/.karabiner.d/configuration/karabiner.json
 fi
 
+# install nix
+curl https://nixos.org/nix/install | sh
+# init nix
+if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then
+  . ~/.nix-profile/etc/profile.d/nix.sh
+fi
+# install packages
+nix-env --install cabal2nix
+nix-env --install nix-prefetch-git
+ix-env --install cabal-install
+
 # manual linking
 ln -s $HOME/.dotfiles/rcrc ~/.rcrc
 ln -s $HOME/.dotfiles/dotsecrets/authinfo ~/.authinfo
