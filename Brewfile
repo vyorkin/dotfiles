@@ -75,7 +75,6 @@ brew 'openssl'
 brew 'asciinema'
 brew 'msmtp'
 brew 'mutt'
-# keep in mind that coretutils installs ghc-mod (for some reason) 
 brew 'coreutils'
 brew 'gnutls'
 brew 'texinfo'
