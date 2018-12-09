@@ -17,6 +17,8 @@ if [[ `uname` == "Darwin" ]]; then
         brew bundle
         mas signin
 
+        xcode-select --install
+
         # setup agda
         mkdir -p ~/.agda
         echo /usr/local/lib/agda/standard-library.agda-lib >>~/.agda/libraries
@@ -34,9 +36,6 @@ if [[ `uname` == "Darwin" ]]; then
 
         sudo easy_install pip
 
-        # install & manually link cabal
-        cabal install cabal-install
-        ln -s $HOME/.cabal/bin/cabal ~/.local/bin/cabal
         # update the Hackage index for the first time
         cabal new-update
 
@@ -53,7 +52,7 @@ fi
 # install packages
 nix-env --install cabal2nix
 nix-env --install nix-prefetch-git
-ix-env --install cabal-install
+nix-env --install cabal-install
 
 # manual linking
 ln -s $HOME/.dotfiles/rcrc ~/.rcrc
@@ -94,8 +93,24 @@ pip3 install -r requirements3.txt
 
 /usr/local/opt/fzf/install
 
+# install ocaml packages
+# switch to older ocamlc since
+# Reasonml and Bucklescript use an older version of ocaml
+opam switch create 4.02.3
+opam init
+opam install merlin tuareg utop reason
+# fstar
+opam pin add fstar --dev-repo
+opam install fstar
+
 # install Hackett programming language
 raco pkg install hackett
+
+# install Proof General from GitHub
+git clone https://github.com/ProofGeneral/PG ~/.emacs.d/lisp/PG
+cd ~/.emacs.d/lisp/PG
+make
+cd -
 
 rcup -v -d ~/.dotfiles
 
