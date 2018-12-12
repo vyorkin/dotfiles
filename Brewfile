@@ -139,7 +139,7 @@ brew 'mysql'
 brew 'sqlite'
 brew 'mongodb'
 
-brew 'llvm', args: ['with-clang', 'with-libcxx']
+brew 'llvm'
 brew 'purescript'
 brew 'stack'
 brew 'cabal-install'
