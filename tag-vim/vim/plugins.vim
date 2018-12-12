@@ -266,11 +266,11 @@ Plug 'wellle/targets.vim'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'nelstrom/vim-textobj-rubyblock'
 
-" completion: supertab or YCM
+" completion
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
 " Plug 'Valloric/YouCompleteMe'
 " Plug 'ervandew/supertab'
-
-Plug 'ajh17/VimCompletesMe'
+" Plug 'ajh17/VimCompletesMe'
 
 " it hangs while I type shit
 " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
