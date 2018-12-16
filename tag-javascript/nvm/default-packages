@@ -22,6 +22,9 @@ now
 purescript
 pulp
 pscid
+psc-package
+spacchetti-cli-bin-simple
+purescript-spago
 purescript-emmet
 git-labelmaker
 json-package
