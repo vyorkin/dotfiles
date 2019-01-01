@@ -24,6 +24,7 @@ pulp
 pscid
 psc-package
 spacchetti-cli-bin-simple
+purp-bin-simple
 purescript-spago
 purescript-emmet
 git-labelmaker
