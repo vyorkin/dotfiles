@@ -27,8 +27,9 @@ if [[ `uname` == "Darwin" ]]; then
         # install rust
         curl https://sh.rustup.rs -sSf | sh
         source ~/.cargo/env
-        rustup component add rust-src
         rustup toolchain add nightly
+        rustup default nightly
+        rustup component add rust-src
         cargo install bingrep
         cargo install rusty-tags
         rustup component add rustfmt-preview --toolchain nightly

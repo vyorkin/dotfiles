@@ -113,12 +113,6 @@ stack install pointfree pointfull codex
 Do you want OPAM to modify ~/.zshrc and ~/.ocamlinit? - the answer is N.
 This is because I use 'x' alias instead, see helpers/functions/env.
 
-```
-$ opam init
-$ opam install merlin
-$ opam install tuareg
-```
-
 For more info see [merlin + vim setup instructions](https://github.com/ocaml/merlin/wiki/vim-from-scratch).
 
 #### Reason
