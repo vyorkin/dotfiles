@@ -81,7 +81,6 @@ brew 'ranger'
 brew 'slurm'
 brew 'gpg'
 brew 'ethereum'
-brew 'swagger-codegen'
 brew 'pev'
 brew 'upx'
 brew 'openssl'
@@ -111,7 +110,6 @@ brew 'fish'
 brew 'the_silver_searcher'
 brew 'fzf'
 
-brew 'mu'
 # NOTE: http://lists.gnu.org/archive/html/bug-gnu-emacs/2018-10/msg00084.html
 brew 'emacs-plus', args: ['HEAD', 'without-spacemacs-icon', 'with-modern-icon']
 brew 'neovim'
