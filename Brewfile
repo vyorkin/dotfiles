@@ -19,7 +19,6 @@ brew 'mas'
 
 cask 'java'
 cask 'java6'
-cask 'java8'
 
 # brew 'rust'
 # rust is installed in Makefile
@@ -103,7 +102,7 @@ brew 'bat'
 brew 'openssl-osx-ca'
 brew 'offline-imap'
 brew 'autoconf-archive'
-brew 'mu', args: ['with-emacs']
+brew 'mu'
 
 brew 'zsh'
 brew 'zplug'
@@ -114,9 +113,9 @@ brew 'fzf'
 
 brew 'mu'
 # NOTE: http://lists.gnu.org/archive/html/bug-gnu-emacs/2018-10/msg00084.html
-brew 'emacs-plus', args: ['HEAD', 'with-no-titlebar', 'without-spacemacs-icon', 'with-modern-icon']
+brew 'emacs-plus', args: ['HEAD', 'without-spacemacs-icon', 'with-modern-icon']
 brew 'neovim'
-brew 'vim', args: ['override-system-vi', 'with-lua', 'with-perl', 'with-python3', 'with-ruby']
+brew 'vim', args: ['with-lua', 'with-perl', 'with-python3', 'with-ruby']
 
 # I use htop-vim fork instead
 # brew 'htop'
@@ -126,10 +125,10 @@ brew 'jq'
 brew 'jid'
 brew 'cheat'
 brew 'sshrc'
-brew 'lesspipe', args: ['with-syntax-highlighting']
+brew 'lesspipe'
 brew 'cowsay'
 
-brew 'wget', args: ['enable-iri']
+brew 'wget'
 brew 'nmap'
 brew 'zmap'
 
@@ -137,7 +136,6 @@ brew 'postgresql'
 brew 'redis'
 brew 'mysql'
 brew 'sqlite'
-brew 'mongodb'
 
 brew 'llvm'
 brew 'purescript'
@@ -156,8 +154,7 @@ brew 'automake'
 brew 'libtool'
 brew 'gettext'
 brew 'boost'
-# de, en, fr langs are installed by default
-brew 'aspell', args: ['with-lang-ru']
+brew 'aspell'
 brew 'hunspell'
 brew 'ispell'
 brew 'nasm'
@@ -174,7 +171,7 @@ brew 'gcc'
 brew 'jenv'
 brew 'rbenv'
 brew 'nvm'
-brew 'yarn', args: ['without-node']
+brew 'yarn'
 
 brew 'kubectl'
 brew 'leiningen'
@@ -183,7 +180,7 @@ brew 'nginx'
 brew 'imagemagick'
 brew 'ffmpeg', args: ['with-libvpx', 'with-libvorbis']
 
-brew 'weechat', args: ['with-perl']
+brew 'weechat'
 brew 'irssi'
 
 cask 'iterm2'

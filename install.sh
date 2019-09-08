@@ -104,9 +104,6 @@ opam install merlin tuareg utop reason
 opam pin add fstar --dev-repo
 opam install fstar
 
-# install Hackett programming language
-raco pkg install hackett
-
 # install Proof General from GitHub
 git clone https://github.com/ProofGeneral/PG ~/.emacs.d/lisp/PG
 cd ~/.emacs.d/lisp/PG
