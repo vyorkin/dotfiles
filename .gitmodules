@@ -1,15 +1,15 @@
 [submodule "tag-zsh"]
 	path = tag-zsh
-	url = git@bitbucket.org:vyorkin/zshrc.git
+	url = git@github.com:vyorkin/zshrc.git
 [submodule "dotsecrets"]
 	path = dotsecrets
-	url = git@bitbucket.org:vyorkin/dotsecrets.git
+	url = git@github.com:vyorkin/dotsecrets.git
 [submodule "tag-emacs/emacs.d"]
 	path = tag-emacs/emacs.d
-	url = git@bitbucket.org:vyorkin/emacs.d.git
+  url = git@github.com:vyorkin/emacs.d.git
 [submodule "tag-tmux"]
 	path = tag-tmux
-	url = git@bitbucket.org:vyorkin/tmux.conf.git
+	url = git@github.com:vyorkin/tmux.conf.git
 [submodule "tag-ruby/rbenv/plugins/ruby-build"]
 	path = tag-ruby/rbenv/plugins/ruby-build
 	url = https://github.com/rbenv/ruby-build.git
