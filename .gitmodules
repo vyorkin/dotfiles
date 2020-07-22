@@ -49,9 +49,6 @@
 [submodule "tag-linux/arch"]
 	path = tag-linux/arch
 	url = git@gist.github.com:e85c0042ab26347fa7046831f6de4e8e.git
-[submodule "config/nvim/UltiSnips"]
-	path = config/nvim/UltiSnips
-	url = https://github.com/vyorkin-personal/ultisnips-snippets.git
 [submodule "tag-ruby/dotpryrc"]
 	path = tag-ruby/dotpryrc
 	url = git@github.com:vyorkin-personal/dotpryrc.git
