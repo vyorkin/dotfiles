@@ -52,3 +52,6 @@
 [submodule "tag-ruby/dotpryrc"]
 	path = tag-ruby/dotpryrc
 	url = git@github.com:vyorkin-personal/dotpryrc.git
+[submodule "tag-git"]
+	path = tag-git
+	url = git@github.com:vyorkin/gitconfig.git
