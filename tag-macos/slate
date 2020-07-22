@@ -49,7 +49,8 @@ alias tiny          move screenOriginX+180;screenOriginY+140 screenSizeX-360;scr
 
 # app aliases
 
-alias browser 'Google Chrome'
+alias browser1 'Google Chrome'
+alias browser2 'Firefox'
 alias editor 'Emacs'
 alias terminal 'iTerm2'
 
@@ -65,7 +66,8 @@ bind n:${hyper} throw next
 
 bind q:${hyper} focus 'Telegram'
 bind b:${hyper} focus 'Helium'
-bind e:${hyper} focus ${browser}
+bind u:${hyper} focus ${browser1}
+bind d:${hyper} focus ${browser2}
 bind f:${hyper} focus ${editor}
 bind x:${hyper} focus 'Xcode'
 bind g:${hyper} focus 'Gitter'

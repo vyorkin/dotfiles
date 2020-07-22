@@ -12,10 +12,9 @@ if [[ `uname -r` == *"ARCH" ]]; then
 fi
 
 if [[ `uname` == "Darwin" ]]; then
-        /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-        brew tap Homebrew/bundle
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+        brew tap homebrew/bundle
         brew bundle
-        mas signin
 
         xcode-select --install
 
@@ -25,20 +24,20 @@ if [[ `uname` == "Darwin" ]]; then
         echo standard-library >>~/.agda/defaults
 
         # install rust
-        curl https://sh.rustup.rs -sSf | sh
+	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
         source ~/.cargo/env
         rustup toolchain add nightly
         rustup default nightly
         rustup component add rust-src
         cargo install bingrep
         cargo install rusty-tags
-        rustup component add rustfmt-preview --toolchain nightly
+        # rustup component add rustfmt-preview --toolchain nightly
         cargo +nightly install racer
 
         sudo easy_install pip
 
         # update the Hackage index for the first time
-        cabal new-update
+        cabal update
 
         mkdir -p ~/.karabiner.d/configuration/
         touch ~/.karabiner.d/configuration/karabiner.json
@@ -56,29 +55,10 @@ nix-env --install nix-prefetch-git
 nix-env --install cabal-install
 
 # manual linking
-ln -s $HOME/.dotfiles/rcrc ~/.rcrc
-ln -s $HOME/.dotfiles/dotsecrets/authinfo ~/.authinfo
-ln -s $HOME/.dotfiles/dotsecrets/netrc ~/.netrc
-ln -s $HOME/.dotfiles/dotsecrets/ssh ~/.ssh
-ln -s $HOME/.dotfiles/dotsecrets/offlineimaprc ~/.offlineimaprc
-ln -s $HOME/.dotfiles/dotsecrets/goobookrc ~/.goobookrc
-ln -s $HOME/.dotfiles/dotsecrets/goobook_auth.json ~/.goobook_auth.json
+source symlink.sh
 
 # fix key permissions
 chmod 600 ~/.ssh/id_*
-
-# link docker bash & zsh completions
-if [[ `uname` == "Darwin" ]]; then
-  ln -s /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion /usr/local/etc/bash_completion.d/docker
-  ln -s /Applications/Docker.app/Contents/Resources/etc/docker-machine.bash-completion /usr/local/etc/bash_completion.d/docker-machine
-  ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion /usr/local/etc/bash_completion.d/docker-compose
-
-  ln -s /Applications/Docker.app/Contents/Resources/etc/docker.zsh-completion /usr/local/share/zsh/site-functions/_docker
-  ln -s /Applications/Docker.app/Contents/Resources/etc/docker-machine.zsh-completion /usr/local/share/zsh/site-functions/_docker-machine
-  ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-completion /usr/local/share/zsh/site-functions/_docker-compose
-
-  source ./setup-macos.sh
-fi
 
 # allow apps from unidentified developers
 sudo spctl --master-disable
@@ -89,6 +69,7 @@ sudo chsh -s $(which zsh) $USER
 # backup existing emacs configuration
 mv -f ~/.emacs.d ~/.emacs.d.bak
 
+python3 -m pip install --user --upgrade pynvim
 pip install -r requirements.txt
 pip3 install -r requirements3.txt
 
@@ -103,12 +84,6 @@ opam install merlin tuareg utop reason
 # fstar
 opam pin add fstar --dev-repo
 opam install fstar
-
-# install Proof General from GitHub
-git clone https://github.com/ProofGeneral/PG ~/.emacs.d/lisp/PG
-cd ~/.emacs.d/lisp/PG
-make
-cd -
 
 rcup -v -d ~/.dotfiles
 

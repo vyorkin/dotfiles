@@ -1,7 +1,11 @@
-virtualenv
+pynvim
+awscli
+goobook
+html2text
+format-sql
+# pgcli
 speedtest-cli
-pgcli
-neovim
-howdoi
 wakatime
+virtualenv
+howdoi
 yamllint

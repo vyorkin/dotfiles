@@ -1,6 +1,12 @@
-neovim
+pynvim
 awscli
-cryptop
 goobook
 html2text
 format-sql
+pgcli
+speedtest-cli
+wakatime
+virtualenv
+pynvim
+howdoi
+yamllint

@@ -1,24 +1,24 @@
 cask_args appdir: '/Applications'
 
-tap 'caskroom/cask'
-tap 'caskroom/versions'
-tap 'caskroom/fonts'
+tap 'homebrew/cask'
+tap 'homebrew/cask-fonts'
 tap 'thoughtbot/formulae'
 tap 'neovim/neovim'
-tap 'ethereum/ethereum'
-tap 'coursier/formulas'
 tap 'd12frosted/emacs-plus'
 tap 'jmhobbs/parrot'
-tap 'paritytech/paritytech'
 tap 'raggi/ale'
 tap 'ocaml/ocaml'
+
 # tap 'railwaycat/emacsmacport'
+
+# tap 'paritytech/paritytech'
+# tap 'ethereum/ethereum'
 
 brew 'rcm'
 brew 'mas'
 
 cask 'java'
-cask 'java6'
+# cask 'java6'
 
 # brew 'rust'
 # rust is installed in Makefile
@@ -35,7 +35,6 @@ brew 'ponyc'
 brew 'racket'
 brew 'scala'
 brew 'sbt'
-brew 'coursier/formulas/coursier', args: ['HEAD']
 brew 'swi-prolog'
 brew 'mercury'
 brew 'fop'
@@ -73,7 +72,6 @@ brew 'drafter'
 brew 'openssl'
 brew 'asciinema'
 brew 'msmtp'
-brew 'mutt'
 brew 'coreutils'
 brew 'gnutls'
 brew 'texinfo'
@@ -111,18 +109,17 @@ brew 'the_silver_searcher'
 brew 'fzf'
 
 # NOTE: http://lists.gnu.org/archive/html/bug-gnu-emacs/2018-10/msg00084.html
-brew 'emacs-plus', args: ['HEAD', 'without-spacemacs-icon', 'with-modern-icon']
-brew 'neovim'
-brew 'vim', args: ['with-lua', 'with-perl', 'with-python3', 'with-ruby']
+brew 'emacs-plus@28'
+brew 'neovim', args: ['HEAD']
+brew 'vim'
 
-# I use htop-vim fork instead
-# brew 'htop'
+# Build & install htop-vim fork manually:
+# https://github.com/KoffeinFlummi/htop-vim
 
 brew 'httpie'
 brew 'jq'
 brew 'jid'
 brew 'cheat'
-brew 'sshrc'
 brew 'lesspipe'
 brew 'cowsay'
 
@@ -145,7 +142,6 @@ brew 'opam'
 brew 'octave'
 brew 'coq'
 brew 'algol68g'
-brew 'solidity'
 
 brew 'autoconf'
 brew 'automake'
@@ -176,7 +172,7 @@ brew 'leiningen'
 brew 'nginx'
 
 brew 'imagemagick'
-brew 'ffmpeg', args: ['with-libvpx', 'with-libvorbis']
+brew 'ffmpeg'
 
 brew 'weechat'
 brew 'irssi'
@@ -212,20 +208,17 @@ cask 'lighttable'
 cask 'intellij-idea-ce'
 
 cask 'skype'
-cask 'telegram-desktop-dev'
+cask 'telegram-desktop'
 cask 'discord'
 cask 'gitter'
-cask 'slack-beta'
-cask 'screenhero'
+cask 'slack'
 cask 'teamviewer'
 
 cask 'kap'
 cask 'vlc'
 cask 'wireshark'
 cask 'tunnelblick'
-cask 'gpgtools'
 cask 'keybase'
-cask 'nylas-mail'
 
 cask 'pgadmin4'
 cask 'google-cloud-sdk'
@@ -237,7 +230,6 @@ cask 'firefox'
 cask 'opera'
 cask 'opera-developer'
 cask 'mist'
-cask 'brave'
 
 cask 'hex-fiend'
 cask '0xed'
