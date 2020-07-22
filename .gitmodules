@@ -55,3 +55,6 @@
 [submodule "tag-git"]
 	path = tag-git
 	url = git@github.com:vyorkin/gitconfig.git
+[submodule "config/nvim"]
+	path = config/nvim
+	url = https://github.com/vyorkin/vimrc.git
